@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Basic -->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Site Metas -->
+    <title>Qaro Coffee</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTEfwCoLm2nBMQar-29VsEk9endLVGTd4&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="id01" class="w3-modal" style="z-index: 25">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <div>
+            <div class="contact-info-left">
+              <h2>CONTACT INFO</h2>
+              <p>For More Please contact us with following details</p>
+              <ul>
+                <li>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i>Addis Ababa, Mexico
+                    Area, <br />Sengatera Negadewoch Hibret Mahiber, 3rd Floor.
+                    <br />Office No. 002
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-phone-square"></i>Phone:
+                    <a href="tel:+1-888705770">+251-911-072303</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-envelope"></i>Email:
+                    <a href="mailto:contactinfo@gmail.com"
+                      >qarotrading@gmail.com</a
+                    >
+                  </p>
+                </li>
+              </ul>
+              <br /><br />
+              <h3>Farm Location</h3>
+              <p>Gambella , Godere woreda</p>
+              <div id="map"></div>
+              <script>
+                // Initialize and add the map
+                function initMap() {
+                  // The location of Uluru
+                  const uluru = { lat: 7.3187, lng: 35.1269 };
+                  // The map, centered at Uluru
+                  const map = new google.maps.Map(
+                    document.getElementById("map"),
+                    {
+                      zoom: 4,
+                      center: uluru,
+                    }
+                  );
+                  // The marker, positioned at Uluru
+                  const marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map,
+                  });
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Main Top -->
+    <div class="main-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="custom-select-box"></div>
+            <div class="right-phone-box">
+              <p>Call US :- <a href="#">+251-911-914610</a></p>
+            </div>
+            <div class="our-link">
+              <ul>
+                <!-- <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li> -->
+                <li>
+                  <a
+                    href="#"
+                    onclick="document.getElementById('id01').style.display='block'"
+                    ><i class="fas fa-location-arrow"></i> Our location</a
+                  >
+                </li>
+                <li>
+                  <a href="contact-us.html"
+                    ><i class="fas fa-headset"></i> Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="text-slid-box">
+              <!-- <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now 
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+      <!-- Start Navigation -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav"
+      >
+        <div class="container">
+          <!-- Start Header Navigation -->
+          <div class="navbar-header">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar-menu"
+              aria-controls="navbars-rs-food"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="index.html"
+              ><img src="images/logo.png" class="logo" alt=""
+            /></a>
+          </div>
+          <!-- End Header Navigation -->
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul
+              class="nav navbar-nav ml-auto"
+              data-in="fadeInDown"
+              data-out="fadeOutUp"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- Start Side Menu -->
+        <div class="side">
+          <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+          <li class="cart-box">
+            <ul class="cart-list">
+              <li>
+                <a href="#" class="photo"
+                  ><img src="images/img-pro-01.jpg" class="cart-thumb" alt=""
+                /></a>
+                <h6><a href="#">Delica omtantur </a></h6>
+                <p>1x - <span class="price">$80.00</span></p>
+              </li>
+              <li>
+                <a href="#" class="photo"
+                  ><img src="images/img-pro-02.jpg" class="cart-thumb" alt=""
+                /></a>
+                <h6><a href="#">Omnes ocurreret</a></h6>
+                <p>1x - <span class="price">$60.00</span></p>
+              </li>
+              <li>
+                <a href="#" class="photo"
+                  ><img src="images/img-pro-03.jpg" class="cart-thumb" alt=""
+                /></a>
+                <h6><a href="#">Agam facilisis</a></h6>
+                <p>1x - <span class="price">$40.00</span></p>
+              </li>
+              <li class="total">
+                <a href="#" class="btn btn-default hvr-hover btn-cart"
+                  >VIEW CART</a
+                >
+                <span class="float-right"><strong>Total</strong>: $180.00</span>
+              </li>
+            </ul>
+          </li>
+        </div>
+        <!-- End Side Menu -->
+      </nav>
+      <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+      <div class="container">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-search"></i></span>
+          <input type="text" class="form-control" placeholder="Search" />
+          <span class="input-group-addon close-search"
+            ><i class="fa fa-times"></i
+          ></span>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start All Title Box -->
+    <div class="all-title-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>ABOUT US</h2>
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">ABOUT US</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End All Title Box -->
+
+    <!-- Start About Page  -->
+    <div class="about-box-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="banner-frame">
+              <img class="img-fluid" src="images/about-img.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="noo-sh-title-top">We are <span>Qaro Coffee</span></h2>
+            <p>
+              Qaro farm or better to say it community is an area located in
+              Godere woreda, Gambela region. The area is covered with coffee
+              trees and dense natural forests. Qaro means coffee in Mezhenger
+              language, an ethnic group located in the northwestern part of the
+              region. The Mezhenger discovered the area while they traveled for
+              hunting. They saw the area vastly covered with coffee trees and
+              named it Qaro.
+            </p>
+            <p>
+              In 2011 the plantation established on 365 hectares of land located
+              in Godere, Gambela region. It is managed and led by professionals
+              with background in coffee farming.
+            </p>
+            <p>
+              We started harvesting in 2016. Now we have annual production of
+              over 300 MT coffees. In order to increase our coffee volume, we
+              are communicating with the region investment office to expand the
+              farm size to 1,000 hectares. Recently, the region investment
+              office has ranked our company among the top investment companies
+              in the region who have demonstrated high performance &
+              development. We are also working with farmers (out growers) in the
+              surrounding area to process and market their coffee through our
+              plantation.
+            </p>
+            <p></p>
+            <p>
+              The company is a member of Ethiopian Coffee Growers and Experters
+              Association and Addis Ababa CHamber of Commerce.
+            </p>
+            <a class="btn hvr-hover" href="#">Read More</a>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-sm-6 col-lg-4">
+            <div class="service-block-inner">
+              <h3>Quality</h3>
+              <p>
+                Our company gives highest attention for quality in all stages of
+                production and respsobale production. Currently, we are
+                processing to attain organic certification for our coffee.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="service-block-inner">
+              <h3>Top Supply</h3>
+              <p>
+                The company works to produce and supply top quality Arabica
+                coffee to global market keeping its traceability and
+                sustainability. We prepare our plantation's coffee both in
+                washed and natural processing methods.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="service-block-inner">
+              <h3>We are Expert</h3>
+              <p>
+                We primarily focus to supply our coffee to the international
+                market keeping its quality and sustainability. We work in all
+                our capacity to satisfy our coffee buyers and establish long
+                term business relationship.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row my-4">
+                <div class="col-12">
+                    <h2 class="noo-sh-title">Meet Our Team</h2>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="hover-team">
+                        <div class="our-team"> <img src="images/img-1.jpg" alt="" />
+                            <div class="team-content">
+                                <h3 class="title">Williamson</h3> <span class="post">Web Developer</span> </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" class="fab fa-facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-google-plus"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-youtube"></a>
+                                </li>
+                            </ul>
+                            <div class="icon"> <i class="fa fa-plus" aria-hidden="true"></i> </div>
+                        </div>
+                        <div class="team-description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
+                        </div>
+                        <hr class="my-0"> </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="hover-team">
+                        <div class="our-team"> <img src="images/img-2.jpg" alt="" />
+                            <div class="team-content">
+                                <h3 class="title">Kristiana</h3> <span class="post">Web Developer</span> </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" class="fab fa-facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-google-plus"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-youtube"></a>
+                                </li>
+                            </ul>
+                            <div class="icon"> <i class="fa fa-plus" aria-hidden="true"></i> </div>
+                        </div>
+                        <div class="team-description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
+                        </div>
+                        <hr class="my-0"> </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="hover-team">
+                        <div class="our-team"> <img src="images/img-3.jpg" alt="" />
+                            <div class="team-content">
+                                <h3 class="title">Steve Thomas</h3> <span class="post">Web Developer</span> </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" class="fab fa-facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-google-plus"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-youtube"></a>
+                                </li>
+                            </ul>
+                            <div class="icon"> <i class="fa fa-plus" aria-hidden="true"></i> </div>
+                        </div>
+                        <div class="team-description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
+                        </div>
+                        <hr class="my-0"> </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="hover-team">
+                        <div class="our-team"> <img src="images/img-1.jpg" alt="" />
+                            <div class="team-content">
+                                <h3 class="title">Williamson</h3> <span class="post">Web Developer</span> </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" class="fab fa-facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-google-plus"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fab fa-youtube"></a>
+                                </li>
+                            </ul>
+                            <div class="icon"> <i class="fa fa-plus" aria-hidden="true"></i> </div>
+                        </div>
+                        <div class="team-description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
+                        </div>
+                        <hr class="my-0"> </div>
+                </div>
+            </div> -->
+      </div>
+    </div>
+    <!-- End About Page -->
+
+    <!-- Start Instagram Feed  -->
+
+    <!-- End Instagram Feed  -->
+
+    <!-- Start Footer  -->
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="footer-top-box">
+                <h3>Business Time</h3>
+                <ul class="list-time">
+                  <li>Monday - Friday: 08.00am to 05.00pm</li>
+                  <li>Saturday: 10.00am to 08.00pm</li>
+                  <li>Sunday: <span>Closed</span></li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Newsletter</h3>
+							<form class="newsletter-box">
+								<div class="form-group">
+									<input class="" type="email" name="Email" placeholder="Email Address*" />
+									<i class="fa fa-envelope"></i>
+								</div>
+								<button class="btn hvr-hover" type="submit">Submit</button>
+							</form>
+						</div>
+					</div> -->
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="footer-top-box">
+                <h3>Social Media</h3>
+                <p>Follow us on facebook.</p>
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/qaro.coffee.12"
+                      ><i class="fab fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="footer-widget">
+                <h4>About Qaro Coffee</h4>
+                <p>
+                  Our company started development of the plantation in 2011 with
+                  355 hectares of land it received from Gambela Investment
+                  Office. We started harvesting in 2016.
+                </p>
+                <p>
+                  Now we have annual production of over 300 MT coffees. In order
+                  to increase our coffee volume, we are communicating with the
+                  region investment office to expand the farm size to 1,000
+                  hectares. Recently, the region investment office has ranked
+                  our company among the top investment companies in the region
+                  who have demonstrated high performance & development.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="footer-link">
+                <h4>Information</h4>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Terms &amp; Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="footer-link-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                  <li>
+                    <p>
+                      <i class="fas fa-map-marker-alt"></i>Addis Ababa, Mexico
+                      Area, <br />Sengatera Negadewoch Hibret Mahiber, 3rd
+                      Floor. <br />Office No. 002
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fas fa-phone-square"></i>Phone:
+                      <a href="tel:+251-913-415457">+1-888 705 770</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fas fa-envelope"></i>Email:
+                      <a href="mailto:contactinfo@gmail.com"
+                        >qarocoffee@gmail.com</a
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+      <p class="footer-company">
+        All Rights Reserved. &copy; 2018 <a href="#">Qaro Trading</a> Design By
+        : <a href="https://zmallshop.com/">ETTA Solutions Plc</a>
+      </p>
+    </div>
+    <!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none"
+      >&uarr;</a
+    >
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
